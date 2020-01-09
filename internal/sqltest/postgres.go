@@ -15,8 +15,8 @@ import (
 )
 
 func id() string {
-	bytes := make([]byte, 10)
-	for i := 0; i < 10; i++ {
+	bytes := make([]byte, 20)
+	for i := 0; i < 20; i++ {
 		bytes[i] = byte(65 + rand.Intn(25)) // A=65 and Z = 65+25
 	}
 	return string(bytes)
